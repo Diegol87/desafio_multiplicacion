@@ -2,7 +2,7 @@ const num2 = parseInt(prompt("Ingrese el un número entre el 1 y el 20 (incluido
 
 const verificar = (numero) => {
     if(numero >= 1 && numero <= 20) {
-        alert("¡El valor ingresado es correcto!")
+        console.log("¡El valor ingresado es correcto!")
         for(let i = 1; i <= numero; i++) {
             let resultado = i * numero;
             respuesta = console.log(i + " x " + numero + " = " + resultado);
@@ -15,7 +15,7 @@ const verificar = (numero) => {
             respuesta = console.log("Factorial de " + i + " es: " + resultado);
         }
     } else {
-        alert("El valor ingresado no es válido")
+        console.log("El valor ingresado fuera de rango")
     }
 }
 verificar(num2)
